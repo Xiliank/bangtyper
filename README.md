@@ -1,4 +1,4 @@
-# bangtyper.
+<img width="1280" height="720" alt="bangtyper  logo" src="https://github.com/user-attachments/assets/a2e79149-6938-484d-b4a1-bc14bda54d31" />
 
 Desktop typing test for Windows. Black + marble gold, three modes, optional timer, Escape to stop, post-run graphs.
 
