@@ -1,4 +1,4 @@
-<img width="1280" height="720" alt="bangtyper  logo" src="https://github.com/user-attachments/assets/a2e79149-6938-484d-b4a1-bc14bda54d31" />
+<img width="256" height="256" alt="bangtyper  logo" src="https://github.com/user-attachments/assets/a2e79149-6938-484d-b4a1-bc14bda54d31" />
 
 Desktop typing test for Windows. Black + marble gold, three modes, optional timer, Escape to stop, post-run graphs.
 
@@ -12,9 +12,12 @@ Add 2–3 real captures under `docs/screenshots/` after you go public (commit PN
 
 | File | Show |
 |------|------|
-| `docs/screenshots/home-dark.png` | Home screen, dark theme |
-| `docs/screenshots/typing.png` | In-run typing + HUD |
-| `docs/screenshots/results.png` | Results graphs |
+| `<img width="1180" height="780" alt="bangtyper1" src="https://github.com/user-attachments/assets/9a46d90a-34f1-4158-8528-ba1c8f8c72a8" />` | Home screen, dark theme |
+| `<img width="1180" height="780" alt="bangtyper2" src="https://github.com/user-attachments/assets/9a1d82d2-1999-4609-bce1-e1b6cb8da80e" />` | In-run typing + HUD |
+| `<img width="1180" height="780" alt="bangtyper3" src="https://github.com/user-attachments/assets/b095b6f4-7db9-41e4-bb5d-74bfe8b5096a" />` | Results graphs |
+| `<img width="1180" height="780" alt="bangtyper4" src="https://github.com/user-attachments/assets/c80f6829-f919-43b4-a3b0-f2765273185e" />` | Settings menu |
+| `<img width="1180" height="780" alt="bangtyper5" src="https://github.com/user-attachments/assets/43923dc6-8997-4b7d-a681-f0b330e506e8" />` | Set target menu |
+| `<img width="1180" height="780" alt="bangtyper6" src="https://github.com/user-attachments/assets/cb2f548b-1c22-4961-8595-ac5e1378b4b2" />` | Show progress menu |
 
 Then embed them here, for example:
 
