@@ -2,7 +2,7 @@
 
 <img src="assets/logo.png" alt="bangtyper." width="160">
 
-Windows desktop typing test. Black + marble gold.
+Lightweight electron desktop typing test for Windows.
 
 **[Download bangtyper 1.2.6](https://github.com/Xiliank/bangtyper/releases/latest)** · [Releases](releases/latest)
 
