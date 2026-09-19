@@ -1,5 +1,4 @@
 # bangtyper.
-
 <img src="assets/logo.png" alt="bangtyper." width="160">
 Lightweight electron desktop typing test for Windows.
 
