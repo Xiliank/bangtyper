@@ -57,3 +57,5 @@ npm run dev
 ## License
 
 [MIT](LICENSE)
+
+### bangtyper runs locally. We don’t collect personal data.
