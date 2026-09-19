@@ -1,0 +1,87 @@
+{
+  "name": "bangtyper",
+  "version": "1.2.6",
+  "description": "bangtyper. — premium desktop typing test",
+  "main": "dist-electron/main.js",
+  "author": "bangtyper.",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 43127 --strictPort",
+    "dev:electron": "concurrently -k \"vite --port 43127 --strictPort\" \"wait-on http://127.0.0.1:43127 && tsc -p electron/tsconfig.json && cross-env VITE_DEV_SERVER_URL=http://127.0.0.1:43127 electron . --disable-gpu --in-process-gpu\"",
+    "build": "tsc -p tsconfig.json --noEmit && vite build && tsc -p electron/tsconfig.json",
+    "preview": "vite preview --port 43127 --strictPort --host 127.0.0.1",
+    "start": "electron .",
+    "pack:win": "npm run build && CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --win portable --x64 -c.win.signAndEditExecutable=false",
+    "pack:win:dir": "npm run build && CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --win dir --x64 -c.win.signAndEditExecutable=false",
+    "pack:win:zip": "npm run pack:win:dir && node scripts/zip-win-unpacked.mjs",
+    "pack:win:all": "npm run build && CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --win portable dir --x64 -c.win.signAndEditExecutable=false && node scripts/zip-win-unpacked.mjs",
+    "pack:dir": "npm run pack:win:dir"
+  },
+  "build": {
+    "appId": "com.bangtyper.app",
+    "productName": "bangtyper",
+    "executableName": "bangtyper",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "assets",
+        "to": "assets"
+      }
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "dir",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.png",
+      "artifactName": "bangtyper-${version}-${arch}.${ext}"
+    },
+    "portable": {
+      "artifactName": "bangtyper-${version}-portable.exe"
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "assets/logo.png",
+      "category": "Utility"
+    }
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8",
+    "playwright-core": "^1.63.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0",
+    "wait-on": "^8.0.2"
+  }
+}
